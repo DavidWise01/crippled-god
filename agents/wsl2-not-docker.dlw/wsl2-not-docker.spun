@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of WSL2 is a VM; Docker isn't
+node CG1 · CG1 · ⟦WSL2 is a VM; Docker isn't:CG1:03c757⟧
+
+WHO   — WSL2 is a VM; Docker isn't — The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+WHAT  — The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+HOW   — The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+
+awareness — what the node knows of itself:
+  The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+
+spoken token : reirn-brir-bres   ·   hex : 03c757
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

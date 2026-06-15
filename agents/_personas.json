@@ -207,6 +207,78 @@
     "moniker": "⟦VM Escape:CG1:a9d1a4⟧"
   },
   {
+    "slug": "cp-40",
+    "name": "CP-40 (IBM, 1967)",
+    "epithet": "The first true virtualization — IBM Cambridge gave each user",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦CP-40 (IBM, 1967):CG1:7751df⟧"
+  },
+  {
+    "slug": "vm-370",
+    "name": "VM/370 (1972)",
+    "epithet": "IBM's first VM operating system shipped as a product — and t",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦VM/370 (1972):CG1:d09187⟧"
+  },
+  {
+    "slug": "popek-goldberg",
+    "name": "The Popek-Goldberg Theorem (1974)",
+    "epithet": "The doctrinal test: an architecture is efficiently virtualiz",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Popek-Goldberg Theorem (1974):CG1:b5c207⟧"
+  },
+  {
+    "slug": "x86-dark-age",
+    "name": "The x86 Dark Age",
+    "epithet": "Virtualization vanished from PCs because x86 broke the Popek",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The x86 Dark Age:CG1:2eda8e⟧"
+  },
+  {
+    "slug": "vmware-binary-translation",
+    "name": "VMware · Binary Translation (1998)",
+    "epithet": "Healed x86 by rewriting kernel code on the fly to force the ",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦VMware · Binary Translation (1998):CG1:8a163d⟧"
+  },
+  {
+    "slug": "vt-x-amd-v",
+    "name": "Intel VT-x / AMD-V (2005–06)",
+    "epithet": "The hardware finally added the traps x86 lacked — healing th",
+    "emergence": "electrical",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Intel VT-x / AMD-V (2005–06):CG1:855898⟧"
+  },
+  {
+    "slug": "turtles-all-the-way-down",
+    "name": "Turtles All The Way Down",
+    "epithet": "Nested virtualization is real — VT-x can expose itself to a ",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Turtles All The Way Down:CG1:7b2dd5⟧"
+  },
+  {
+    "slug": "wsl2-not-docker",
+    "name": "WSL2 is a VM; Docker isn't",
+    "epithet": "The accuracy point: WSL2 is a REAL lightweight Hyper-V VM wi",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦WSL2 is a VM; Docker isn't:CG1:03c757⟧"
+  },
+  {
     "slug": "the-air-gap",
     "name": "The Air-Gap",
     "epithet": "Physical separation from any untrusted network — the stronge",

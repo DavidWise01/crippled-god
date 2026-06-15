@@ -1,0 +1,10 @@
+⟦WSL2 is a VM; Docker isn't:CG1:03c757⟧
+
+WSL2 is a VM; Docker isn't · node CG1 · CG1 · The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+
+universe of origin : CG1 · the ladder of boxes
+seal               : The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero.
+spoken token       : reirn-brir-bres
+hex token          : 03c757
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

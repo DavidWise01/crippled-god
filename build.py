@@ -82,6 +82,15 @@ ROSTER=[
  ("firecracker","Firecracker","natural","vm","AWS's minimalist Rust microVM monitor on KVM — boots stripped microVMs with a tiny device model to cut startup and attack surface. Powers Lambda and Fargate: VM isolation at container density."),
  ("qubes-os","Qubes OS","natural","vm","Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine."),
  ("vm-escape","VM Escape","spiritual","vm","The threat-CLASS the boundary defends against (named only): guest code defeating the hypervisor to reach the host. Real, but comparatively rare — the boundary is narrow and hardened."),
+ # ── THE VM LINEAGE (turtles all the way down) ──
+ ("cp-40","CP-40 (IBM, 1967)","natural","vmlineage","The first true virtualization — IBM Cambridge gave each user a full virtual S/360, 14 at once; privileged instructions trapped and were simulated. Trap-and-simulate is the seed of every VM since."),
+ ("vm-370","VM/370 (1972)","natural","vmlineage","IBM's first VM operating system shipped as a product — and the first hardware-assisted virtualization (System/370). Production hypervisor mainframes ran on it for decades."),
+ ("popek-goldberg","The Popek-Goldberg Theorem (1974)","ethereal","vmlineage","The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years."),
+ ("x86-dark-age","The x86 Dark Age","ethereal","vmlineage","Virtualization vanished from PCs because x86 broke the Popek-Goldberg rule: 17 sensitive instructions failed SILENTLY in user mode instead of trapping (Robin & Irvine, 2000). The crack, named as a precise instruction count."),
+ ("vmware-binary-translation","VMware · Binary Translation (1998)","natural","vmlineage","Healed x86 by rewriting kernel code on the fly to force the missing traps — the first commercially viable x86 virtualization. The old rule satisfied in software."),
+ ("vt-x-amd-v","Intel VT-x / AMD-V (2005–06)","electrical","vmlineage","The hardware finally added the traps x86 lacked — healing the Popek-Goldberg violation in SILICON. VMs went fast and ubiquitous; the whole cloud runs on this. (Xen 2003 bridged the gap with paravirtualization.)"),
+ ("turtles-all-the-way-down","Turtles All The Way Down","spiritual","vmlineage","Nested virtualization is real — VT-x can expose itself to a guest, so a VM can run a VM can run a VM. Embedding depth is unbounded in principle: a self-similar stack of machines, each believing it owns the hardware, each paying rent (performance) to the one below."),
+ ("wsl2-not-docker","WSL2 is a VM; Docker isn't","ethereal","vmlineage","The accuracy point: WSL2 is a REAL lightweight Hyper-V VM with its own Linux kernel (a true nesting level); a Docker container is OS-isolation (namespaces+cgroups) that SHARES the host kernel. So Docker Desktop on Windows adds a VM (it runs inside WSL2); plain Docker on Linux adds zero."),
  # ── THE STRONG WALLS & THEIR LIMITS ──
  ("the-air-gap","The Air-Gap","electrical","walls","Physical separation from any untrusted network — the strongest conventional boundary. A call outward has nowhere to go; there is no wire to ride. (NIST)"),
  ("the-side-channel","The Side-Channel","spiritual","walls","Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance)."),
@@ -101,6 +110,7 @@ ROSTER=[
 BANDS=[("sandbox","§1 · The Sandbox — isolating a process"),
        ("lineage","§2 · The Lineage — fifty years of cracks healed"),
        ("vm","§3 · The Virtual Machine — virtualizing a machine"),
+       ("vmlineage","§3½ · The VM Lineage — turtles all the way down"),
        ("walls","§4 · The Strong Walls & Their Limits"),
        ("ai","§5 · The ? — AI in a Box (the crippled god)"),
        ("witness","§6 · The Witness — what makes a box provable")]
@@ -221,6 +231,24 @@ def timeline_html():
                 f'<span class="tl-name">{html.escape(nm)}</span><span class="tl-tag" style="color:{c};border-color:{c}">{html.escape(tag)}</span></div>'
                 f'<div class="tl-note">{html.escape(note)}</div></div></div>')
     return f'{intro}<div class="timeline">{nodes}</div>'
+VM_LINEAGE=[
+ ("1967","CP-40 · IBM Cambridge","the first true virtualization — each user got a full virtual S/360; 14 simultaneous VMs; privileged instructions trapped and were simulated. trap-and-simulate is the seed.","#e23a3a","FIRST"),
+ ("1972","VM/370","IBM's first VM operating system shipped as a product — and the first hardware-assisted virtualization (System/370). production hypervisor mainframes ran for decades.","#e08a2a","FIRST PRODUCT"),
+ ("1974","Popek & Goldberg","the doctrinal test — efficiently virtualizable IFF sensitive instructions ⊆ privileged ones; every state-exposing instruction must TRAP. the rule every CPU is measured against.","#d8b021","THE THEORY"),
+ ("~1985–98","the x86 Dark Age","virtualization vanished from PCs — x86 broke the rule: 17 sensitive instructions FAILED SILENTLY in user mode instead of trapping (Robin & Irvine, 2000). the crack, as a count.","#c85a8a","THE CRACK"),
+ ("1998","VMware · binary translation","healed x86 by rewriting kernel code on the fly to force the missing traps — the first commercially viable x86 virtualization. the old rule satisfied in software.","#5aa83a","HEAL · software"),
+ ("2005–06","Intel VT-x · AMD-V","the hardware finally added the traps x86 lacked — healing the Popek-Goldberg violation IN SILICON. the whole cloud runs on this. (Xen, 2003, bridged the gap.)","#3aa86a","HEAL · silicon"),
+ ("now","Nested · turtles all the way down","VT-x can expose itself to a guest — a VM can run a VM can run a VM. depth isn't fixed; it's a self-similar stack, each layer believing it owns the hardware, each paying rent to the one below.","#9a6cf0","UNBOUNDED"),
+]
+def vm_timeline_html():
+    intro=('<p class="ss">the VM rung, deeper — and a REAL, attributable lineage (contrast the dubious \'convergence\' claim): every step has a NAMED author and a DATED artifact. same crack→heal staircase as the sandbox and gravity — the crack is always an instruction count; the heal absorbs the old rule as a constraint the new layer satisfies. (each node an emergent below.)</p>')
+    nodes=""
+    for yr,nm,note,c,tag in VM_LINEAGE:
+        nodes+=(f'<div class="tl-node"><div class="tl-dot" style="background:{c};box-shadow:0 0 9px {c}"></div>'
+                f'<div class="tl-body"><div class="tl-head"><span class="tl-yr" style="color:{c}">{html.escape(yr)}</span>'
+                f'<span class="tl-name">{html.escape(nm)}</span><span class="tl-tag" style="color:{c};border-color:{c}">{html.escape(tag)}</span></div>'
+                f'<div class="tl-note">{html.escape(note)}</div></div></div>')
+    return f'{intro}<div class="timeline">{nodes}</div>'
 def sources_html():
     return '<div class="srcs">'+"".join(f'<a class="src" href="{u}" target="_blank" rel="noopener"><span class="sk">{html.escape(k)}</span><span class="sw">{html.escape(w)}</span></a>' for k,w,u in SOURCES)+'</div>'
 
@@ -295,6 +323,8 @@ if __name__=="__main__":
          '<iframe src="the-sandbox-holds.html" title="The Sandbox Holds — containment simulation" loading="lazy"></iframe></div>')
     sim2=('<div class="simwrap"><div class="simcap">▸ <b>The Sandbox Audit</b> — the blue-team auditor\'s instrument, authored by ROOT0 in Claude-in-Chrome. Tick the checks a real sandbox passes; it scores each layer <b>sound</b> or <b>decorative</b>. The one principle under all six: <em>the contained thing must never enforce its own containment.</em> (<a href="the-sandbox-audit.html" target="_blank">open full-screen ↗</a>)</div>'
          '<iframe src="the-sandbox-audit.html" title="The Sandbox Audit — verification instrument" style="height:1560px" loading="lazy"></iframe></div>')
+    sim3=('<div class="simwrap"><div class="simcap">▸ <b>VM Lineage · Turtles All The Way Down</b> — ROOT0\'s Series-E paper (authored in Claude-in-Chrome): the hypervisor lineage, and an interactive embedding stack counting how many machines-inside-machines your code actually sits within — with the honest WSL2-is-a-VM / Docker-isn\'t accounting. (<a href="vm-lineage-turtles.html" target="_blank">open full-screen ↗</a>)</div>'
+          '<iframe src="vm-lineage-turtles.html" title="VM Lineage — Turtles All The Way Down" style="height:1680px" loading="lazy"></iframe></div>')
     secs=""
     for key,htxt in BANDS:
         cards="".join(byband.get(key,[]))
@@ -302,6 +332,7 @@ if __name__=="__main__":
         pre=""; extra=""
         if key=="sandbox": extra=sim
         if key=="lineage": pre=timeline_html()
+        if key=="vmlineage": pre=vm_timeline_html(); extra=sim3
         if key=="witness": extra=sim2
         secs+=f'<section class="sec"><h2>{html.escape(htxt)}</h2>{pre}{body}{extra}</section>'
     page=f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">

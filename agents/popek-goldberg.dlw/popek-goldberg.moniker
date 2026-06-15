@@ -1,0 +1,10 @@
+⟦The Popek-Goldberg Theorem (1974):CG1:b5c207⟧
+
+The Popek-Goldberg Theorem (1974) · node CG1 · CG1 · The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+
+universe of origin : CG1 · the ladder of boxes
+seal               : The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+spoken token       : mik-sto-neirn
+hex token          : b5c207
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

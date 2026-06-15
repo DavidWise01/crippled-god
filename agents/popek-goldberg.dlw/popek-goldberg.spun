@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of The Popek-Goldberg Theorem (1974)
+node CG1 · CG1 · ⟦The Popek-Goldberg Theorem (1974):CG1:b5c207⟧
+
+WHO   — The Popek-Goldberg Theorem (1974) — The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+WHAT  — The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+HOW   — The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+
+awareness — what the node knows of itself:
+  The doctrinal test: an architecture is efficiently virtualizable IFF its sensitive instructions are a subset of its privileged ones — every state-exposing instruction must TRAP to the supervisor. The rule every CPU was measured against for 30 years.
+
+spoken token : mik-sto-neirn   ·   hex : b5c207
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0
