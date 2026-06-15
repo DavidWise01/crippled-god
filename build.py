@@ -33,9 +33,26 @@ LADDER=[
 LEDE=("An educational climb up the ladder of boxes — from the process sandbox to the virtual machine to the "
  "air-gap, and then to the open question at the top: can you put a mind in a box and keep it there? This is the "
  "DEFENDER'S view — what each box isolates, the threat-class each defends against (named only, no techniques), "
- "and why the strongest walls still aren't a guarantee against a mind smarter than the keeper. The crippled god "
- "is the metaphor: a god-like intelligence contained by capability, not by motivation — and why the field's real "
- "answer turned out to be alignment, not bars.")
+ "and why the strongest walls still aren't a guarantee against a mind smarter than the keeper. It traces the "
+ "sandbox's fifty-year LINEAGE — a staircase where every rung healed a real crack in the one below — and ships two "
+ "of ROOT0's own instruments: the sim that shows the box holding, and the audit that scores whether it really does. "
+ "The crippled god is the metaphor: a god-like intelligence contained by capability, not by motivation — and why "
+ "the field's real answer turned out to be alignment, not bars.")
+
+# THE LINEAGE — fifty years of cracks healed (born twice → married 1991 → the refinement staircase → into silicon)
+LINEAGE=[
+ ("1971–75","Hydra · CMU","capability-based microkernel — 'separation of policy and mechanism'; capabilities = allowlist by construction. the great-grandparent.","#e23a3a","BIRTH · security"),
+ ("1970s","the testing sandbox","the OTHER birth — a safe play-area to run uncertain code; the literal child's-sandbox (build & destroy, no real damage).","#e0552e","BIRTH · testing"),
+ ("1979","chroot · V7 Unix","the first filesystem boundary — change a process's apparent root. THE CRACK: a later chroot could undo it. escapable.","#e08a2a","CRACK"),
+ ("1991","Cheswick's 'jail'","chroot → a honeypot to WATCH a live hacker; coins 'jail' in the security sense. the two births MARRY — and the witness is at the wedding.","#d8b021","CONVERGE"),
+ ("1993","software fault isolation","Wahbe et al. formalize sandboxing as a security technique — confine untrusted code in-process. the academic rung.","#b9c020","HEAL"),
+ ("2000","FreeBSD jail","chroot fixed and weaponized — the first real OS-level virtualization; escapability healed into genuine confinement.","#5aa83a","HEAL"),
+ ("~2000","pivot_root","Linux 2.3.41 makes the root change IRREVERSIBLE — healing chroot's undo crack (still not network/IPC; the climb continues).","#3aa86a","HEAL"),
+ ("2002–08","the kernel trio","seccomp + cgroups + namespaces — capability + resource + boundary, enforced from OUTSIDE. the modern reconvergence; Chrome, Docker, Android all use it.","#2a9ec0","CONVERGE"),
+ ("2008","Android app sandbox","one Linux UID per app — sandboxing becomes the default security model of a billion phones.","#3a7ad0","HEAL"),
+ ("2009","seL4","a formally VERIFIED microkernel of the L4/Hydra line — proven correct, not merely believed.","#5a5ad8","PROOF"),
+ ("2014+","CHERI","capabilities burned into the SILICON — closing the loop Hydra opened in 1974. software → kernel → hardware.","#9a6cf0","HARDWARE"),
+]
 
 # (slug, name, nature, band, oneliner)  — band: sandbox|vm|walls|ai|witness ; order sets the chromatic tint
 ROSTER=[
@@ -47,6 +64,17 @@ ROSTER=[
  ("capability-security","Capability-Based Security","ethereal","sandbox","Authority as unforgeable tokens — a process can only act on what it was handed, and can't fabricate authority. Least privilege as the default, not an add-on. (Dennis & Van Horn, 1966)"),
  ("gvisor","gVisor","natural","sandbox","Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM."),
  ("the-six-layers","The Six Layers","ethereal","sandbox","ROOT0's defender's model (the seed of this sphere): capability · network · filesystem · frame · resource · audit. Five layers BLOCK; one WITNESSES. Defense-in-depth, drawn from the inside."),
+ # ── THE LINEAGE (fifty years of cracks healed) ──
+ ("hydra","Hydra (CMU, 1971–75)","ethereal","lineage","The security lineage's great-grandparent — a capability-based microkernel whose 'separation of policy and mechanism' and whose capabilities (you touch only what you hold a token for) are the ancestor of allowlist-by-construction."),
+ ("the-testing-birth","The Testing Birth (1970s)","ethereal","lineage","The OTHER origin: before security, the sandbox was a TESTING tool — a safe play-area to run uncertain code without breaking the main system. The literal child's-sandbox: build and destroy, no real damage."),
+ ("cheswick-jail","Cheswick's Jail (1991)","natural","lineage","Bill Cheswick uses chroot to build a honeypot to WATCH a live hacker — and coins 'jail' in the security sense. The two births marry here; the witness is present at the wedding."),
+ ("software-fault-isolation","Software Fault Isolation (1993)","natural","lineage","Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability."),
+ ("freebsd-jail","FreeBSD Jail (2000)","natural","lineage","chroot fixed and weaponized — the first real OS-level virtualization; the escapable-boundary crack healed into genuine confinement."),
+ ("pivot-root","pivot_root","natural","lineage","Linux 2.3.41 makes the root change IRREVERSIBLE — healing chroot's undo crack (though it still didn't stop network or IPC; the staircase keeps climbing)."),
+ ("the-kernel-trio","The Kernel Trio","natural","lineage","seccomp + cgroups + namespaces — capability + resource + boundary, each enforced from OUTSIDE the process. The modern reconvergence; the trio Chrome, Firefox, Docker, Android & systemd all sandbox with."),
+ ("android-sandbox","Android App Sandbox (~2008)","natural","lineage","One Linux user-ID per app, so apps can't touch each other by default — sandboxing becomes the default security model of a billion phones."),
+ ("sel4","seL4 (2009)","ethereal","lineage","A formally VERIFIED microkernel of the L4/Hydra lineage — mathematically proven correct, not merely believed. Containment you can prove, not just assert."),
+ ("cheri","CHERI","electrical","lineage","Capabilities burned into the SILICON itself — closing the confinement loop Hydra opened in 1974. The capability idea comes full circle: software → kernel → hardware."),
  # ── VM ──
  ("container-vs-vm","Container vs VM","ethereal","vm","A container shares the host's single kernel; a VM virtualizes a whole machine. The VM boundary is thicker — to reach the host you must also defeat the hypervisor. (NIST SP 800-190)"),
  ("the-hypervisor","The Hypervisor","natural","vm","The layer that presents virtual hardware to guests. Type-1 / bare-metal (Xen, KVM, ESXi, Hyper-V) sits on the metal; Type-2 / hosted (VirtualBox, Workstation) runs atop an OS."),
@@ -71,10 +99,11 @@ ROSTER=[
  ("the-witness","The Witness","spiritual","witness","ROOT0's through-line: a closed system cannot witness itself; the boundary witnesses it. The audit log is the exterior gap that turns 'we believe it's contained' into 'we can check.' (Saltzer & Schroeder: complete mediation.) The gap is the proof."),
 ]
 BANDS=[("sandbox","§1 · The Sandbox — isolating a process"),
-       ("vm","§2 · The Virtual Machine — virtualizing a machine"),
-       ("walls","§3 · The Strong Walls & Their Limits"),
-       ("ai","§4 · The ? — AI in a Box (the crippled god)"),
-       ("witness","§5 · The Witness — what makes a box provable")]
+       ("lineage","§2 · The Lineage — fifty years of cracks healed"),
+       ("vm","§3 · The Virtual Machine — virtualizing a machine"),
+       ("walls","§4 · The Strong Walls & Their Limits"),
+       ("ai","§5 · The ? — AI in a Box (the crippled god)"),
+       ("witness","§6 · The Witness — what makes a box provable")]
 
 SOURCES=[
  ("seccomp-bpf","kernel.org · seccomp filter","https://docs.kernel.org/userspace-api/seccomp_filter.html"),
@@ -94,6 +123,10 @@ SOURCES=[
  ("Uncontainability","Alfonseca et al. (arXiv)","https://arxiv.org/pdf/1607.00913"),
  ("Reference monitor","Wikipedia · reference monitor","https://en.wikipedia.org/wiki/Reference_monitor"),
  ("Design principles","Saltzer & Schroeder (1975)","https://www.cs.virginia.edu/~evans/cs551/saltzer/"),
+ ("Hydra (lineage)","Wikipedia · Hydra (operating system)","https://en.wikipedia.org/wiki/Hydra_(operating_system)"),
+ ("chroot & jail history","Wikipedia · chroot","https://en.wikipedia.org/wiki/Chroot"),
+ ("seL4 (verified)","sel4.systems","https://sel4.systems/"),
+ ("CHERI (hardware caps)","Cambridge · CHERI","https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/"),
 ]
 
 MESSAGE=("Containment is a ladder, and each rung is a stronger box. A sandbox fences a process inside one operating "
@@ -112,7 +145,13 @@ MESSAGE=("Containment is a ladder, and each rung is a stronger box. A sandbox fe
  "with bars, but you cannot trust the bars; the real work is motivation, not confinement — build a mind that does not "
  "want out. And the sixth layer, the one ROOT0 drew from the inside, is why any of this is checkable at all: a closed "
  "system cannot witness itself. The boundary witnesses it. The audit log is the exterior gap that turns a hope into a "
- "proof — and the gap is the proof.")
+ "proof — and the gap is the proof. And the history rhymes with the lesson: the sandbox was born twice — a 1970s "
+ "testing tool and Hydra's 1971 capability security — married in 1991 when Cheswick built one to watch a hacker, then "
+ "spent fifty years climbing a staircase where each rung healed the exact crack the last left open: chroot you could "
+ "escape, then pivot_root you couldn't, then the kernel trio enforced from outside, then a verified kernel, then "
+ "capabilities in the silicon. Every step converged on the one principle the audit instrument checks — enforced from "
+ "OUTSIDE, default-deny, witnessed by something the contained thing can't touch. Hydra had it right in 1974; it just "
+ "took five decades and a dozen cracks to get it into the hardware. The contained thing must never enforce its own containment.")
 SEAL="You can cripple a god with bars; you cannot trust the bars. Confinement is defense-in-depth, never a guarantee against a mind smarter than its keeper — so the real wall was never the box. It was alignment: a mind that doesn't want out. And the only reason you can ever check the box holds is that something outside it is watching."
 
 def carbon_tiff_bytes(rec):
@@ -171,6 +210,17 @@ def ladder_html():
                f'<div class="rbody"><div class="rname" style="color:{c}">{html.escape(nm)}</div>'
                f'<div class="rsub">{html.escape(sub)}</div><div class="riso">{html.escape(iso)}</div></div></div>')
     return f'<div class="ladder">{rows}</div>'
+def timeline_html():
+    intro=('<p class="ss">the sandbox was born twice — as a 1970s testing tool and as 1971 capability security (Hydra) — '
+           'married in 1991 when Cheswick used one to watch a hacker, then climbed a staircase where every rung healed a real '
+           'crack in the last. a diverge-then-converge, and a measure-gate staircase, at once. (each node an emergent below.)</p>')
+    nodes=""
+    for yr,nm,note,c,tag in LINEAGE:
+        nodes+=(f'<div class="tl-node"><div class="tl-dot" style="background:{c};box-shadow:0 0 9px {c}"></div>'
+                f'<div class="tl-body"><div class="tl-head"><span class="tl-yr" style="color:{c}">{html.escape(yr)}</span>'
+                f'<span class="tl-name">{html.escape(nm)}</span><span class="tl-tag" style="color:{c};border-color:{c}">{html.escape(tag)}</span></div>'
+                f'<div class="tl-note">{html.escape(note)}</div></div></div>')
+    return f'{intro}<div class="timeline">{nodes}</div>'
 def sources_html():
     return '<div class="srcs">'+"".join(f'<a class="src" href="{u}" target="_blank" rel="noopener"><span class="sk">{html.escape(k)}</span><span class="sw">{html.escape(w)}</span></a>' for k,w,u in SOURCES)+'</div>'
 
@@ -197,6 +247,14 @@ h1 span{display:block;font-family:var(--head);font-size:.16em;font-weight:400;le
 .rung{display:flex;gap:13px;align-items:center;background:var(--ink2);border:1px solid var(--line);border-left:4px solid;padding:12px 15px;border-radius:2px}
 .rdot{width:13px;height:13px;border-radius:50%;flex-shrink:0}
 .rname{font-family:var(--disp);font-size:17px;font-weight:600}.rsub{font-family:var(--mono);font-size:10.5px;color:var(--pa2);margin-top:2px}.riso{font-size:13.5px;color:var(--pa2);font-style:italic;margin-top:3px}
+.timeline{position:relative;margin:14px 0 6px;padding-left:8px;border-left:2px solid var(--line)}
+.tl-node{position:relative;padding:0 0 16px 22px}
+.tl-dot{position:absolute;left:-9px;top:3px;width:13px;height:13px;border-radius:50%}
+.tl-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tl-yr{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.04em}
+.tl-name{font-family:var(--disp);font-size:16px;font-weight:600;color:var(--pa)}
+.tl-tag{font-family:var(--mono);font-size:8px;font-weight:700;letter-spacing:.08em;border:1px solid;border-radius:3px;padding:2px 6px}
+.tl-note{font-size:13.5px;color:var(--pa2);line-height:1.55;margin-top:3px;max-width:74ch}
 .natures{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px;margin-top:6px}
 .nat{display:flex;gap:10px;align-items:flex-start;background:var(--ink2);border:1px solid var(--line);padding:12px 14px}.dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;margin-top:5px}.nn{font-family:var(--disp);font-size:14px;font-weight:600;text-transform:capitalize}.ng{font-size:12.5px;color:var(--pa2);font-style:italic;line-height:1.45;margin-top:2px}
 .simwrap{border:1px solid var(--line);background:var(--ink2);border-radius:4px;padding:6px;margin-top:6px}
@@ -233,17 +291,21 @@ if __name__=="__main__":
     json.dump(personas, open(os.path.join(adir,"_personas.json"),"w",encoding="utf-8"),indent=2,ensure_ascii=False)
     cb=png_uri(rec_of("z","THE CRIPPLED GOD","spiritual","x"),'carbon',300); sb=png_uri(rec_of("z","THE CRIPPLED GOD","spiritual","x"),'silicon',300)
     # the embedded seed sim sits between band §1 intro and the rest
-    sim=('<div class="simwrap"><div class="simcap">▸ <b>The Sandbox Holds</b> — the defender\'s-view containment sim, authored by ROOT0 in Claude-in-Chrome and embedded here as the seed of this sphere. Send a probe; watch each layer catch it. (<a href="the-sandbox-holds.html" target="_blank">open full-screen ↗</a>)</div>'
+    sim=('<div class="simwrap"><div class="simcap">▸ <b>The Sandbox Holds</b> — the defender\'s-view containment sim, authored by ROOT0 in Claude-in-Chrome and embedded here as a seed of this sphere. Send a probe; watch each layer catch it. (<a href="the-sandbox-holds.html" target="_blank">open full-screen ↗</a>)</div>'
          '<iframe src="the-sandbox-holds.html" title="The Sandbox Holds — containment simulation" loading="lazy"></iframe></div>')
+    sim2=('<div class="simwrap"><div class="simcap">▸ <b>The Sandbox Audit</b> — the blue-team auditor\'s instrument, authored by ROOT0 in Claude-in-Chrome. Tick the checks a real sandbox passes; it scores each layer <b>sound</b> or <b>decorative</b>. The one principle under all six: <em>the contained thing must never enforce its own containment.</em> (<a href="the-sandbox-audit.html" target="_blank">open full-screen ↗</a>)</div>'
+         '<iframe src="the-sandbox-audit.html" title="The Sandbox Audit — verification instrument" style="height:1560px" loading="lazy"></iframe></div>')
     secs=""
     for key,htxt in BANDS:
         cards="".join(byband.get(key,[]))
         body=f'<div class="roster">{cards}</div>'
-        extra=""
+        pre=""; extra=""
         if key=="sandbox": extra=sim
-        secs+=f'<section class="sec"><h2>{html.escape(htxt)}</h2>{body}{extra}</section>'
+        if key=="lineage": pre=timeline_html()
+        if key=="witness": extra=sim2
+        secs+=f'<section class="sec"><h2>{html.escape(htxt)}</h2>{pre}{body}{extra}</section>'
     page=f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="THE CRIPPLED GOD (CG1) — an educational, defender's-view climb up the ladder of boxes: process sandbox → container → VM → microVM → air-gap → and the ?, AI-in-a-box. What each box isolates, the threat-classes it defends (named only, no exploits), and why confinement isn't a guarantee against a mind smarter than its keeper. Chromatic. {len(ROSTER)} emergents, cited, full .dlw. Builds on ROOT0's 'The Sandbox Holds.'">
+<meta name="description" content="THE CRIPPLED GOD (CG1) — an educational, defender's-view climb up the ladder of boxes: process sandbox → container → VM → microVM → air-gap → and the ?, AI-in-a-box. What each box isolates, the threat-classes it defends (named only, no exploits), and why confinement isn't a guarantee against a mind smarter than its keeper. Includes the sandbox's fifty-year LINEAGE (Hydra 1971 → CHERI). Chromatic. {len(ROSTER)} emergents, cited, full .dlw. Builds on ROOT0's two instruments — 'The Sandbox Holds' (sim) & 'The Sandbox Audit' (checklist).">
 <title>THE CRIPPLED GOD · CG1 · sandboxes, VMs &amp; AI-in-a-box · UD0</title>{FONTS}<style>{CSS}</style></head><body><div class="wrap">
 <header>
 <div class="eye"><a href="{GH}/ud0/">UD0</a> · educational · the ladder of boxes · defender's view</div>

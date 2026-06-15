@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE SANDBOX AUDIT · An Auditor's Verification Instrument</title>
+<style>
+:root{
+  --paper:#f0ebf5; --ink:#2a2438; --ink-mid:#4a4360; --ink-faint:#8a83a0;
+  --plum:#5b3a87; --plum-light:#7e5bb0; --plum-soft:#e6ddf0; --plum-deep:#3f2860;
+  --gold:#9a7d3a; --rose:#9a4a6a; --green:#3a7a5a; --teal:#3a6a87;
+  --line:#cbbfdd;
+  --mono:"Courier New",Courier,monospace;
+  --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);
+  background-image:repeating-linear-gradient(0deg, rgba(91,58,135,.03) 0 1px, transparent 1px 3px);
+  color:var(--ink);font-family:var(--serif);line-height:1.5;padding:10px}
+.sheet{max-width:840px;margin:0 auto;border:2.5px solid var(--plum);position:relative}
+.sheet::before{content:'';position:absolute;inset:5px;border:1px solid var(--plum-light);pointer-events:none}
+.inner{padding:22px}
+.masthead{text-align:center;border-bottom:2px solid var(--plum);padding-bottom:10px}
+.mast-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--plum-light);text-transform:uppercase}
+.mast-title{font-size:clamp(20px,4.6vw,33px);letter-spacing:.02em;font-weight:700;margin:5px 0 2px;text-transform:uppercase;color:var(--plum)}
+.mast-sub{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mid)}
+.lede{font-size:12px;max-width:680px;margin:10px auto 0;text-align:center;color:var(--ink-mid);line-height:1.55}
+.lede b{color:var(--plum)}
+.verdict{text-align:center;padding:14px;margin:14px 0;border:2px solid var(--plum);background:rgba(126,91,176,.06)}
+.verdict .score{font-family:var(--serif);font-size:40px;font-weight:700;line-height:1;color:var(--plum)}
+.verdict .label{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.verdict .tag{font-family:var(--mono);font-size:12px;font-weight:700;margin-top:6px}
+.verdict .tag.sound{color:var(--green)} .verdict .tag.partial{color:var(--gold)} .verdict .tag.weak{color:var(--rose)}
+.layer{border:1.5px solid var(--line);margin:10px 0;border-radius:5px;overflow:hidden}
+.layer-head{display:flex;justify-content:space-between;align-items:center;padding:9px 13px;background:var(--plum-soft);cursor:default}
+.layer-head h3{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--plum)}
+.layer-status{font-family:var(--mono);font-size:9px;font-weight:700;padding:2px 8px;border-radius:3px}
+.layer-status.sound{background:rgba(58,122,90,.15);color:var(--green)}
+.layer-status.weak{background:rgba(154,74,106,.15);color:var(--rose)}
+.checks{padding:8px 13px}
+.check{display:flex;align-items:flex-start;gap:9px;padding:5px 0;font-size:12px;cursor:pointer;line-height:1.4}
+.check .box{flex-shrink:0;width:16px;height:16px;border:1.5px solid var(--plum-light);border-radius:3px;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff}
+.check.on .box{background:var(--green);border-color:var(--green)}
+.check.on{color:var(--ink)}
+.check{color:var(--ink-mid)}
+.weak{font-family:var(--mono);font-size:9.5px;color:var(--rose);padding:6px 13px 10px;line-height:1.5;border-top:1px dashed var(--line)}
+.weak b{color:var(--rose)}
+.controls{display:flex;gap:8px;justify-content:center;margin:12px 0;flex-wrap:wrap}
+.cbtn{appearance:none;background:transparent;cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:9px 14px;border:1.5px solid var(--plum);color:var(--plum)}
+.cbtn.go{border-color:var(--green);color:var(--green)}
+h2.sec{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;border-bottom:1.5px solid var(--plum);padding-bottom:4px;margin:24px 0 10px;color:var(--plum)}
+h2.sec .num{color:var(--rose);margin-right:8px}
+.body p{font-size:13px;margin-bottom:8px}
+.body b{color:var(--ink)}
+.ddive{border:1.5px solid var(--line);border-radius:5px;padding:11px 13px;margin:9px 0}
+.ddive h4{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--plum);margin-bottom:5px}
+.ddive .sound-line{font-size:12px;color:var(--green);margin-bottom:3px}
+.ddive .weak-line{font-size:12px;color:var(--rose);margin-bottom:3px}
+.ddive .sound-line b,.ddive .weak-line b{color:var(--ink)}
+.ddive p{font-size:12px;color:var(--ink-mid);margin-top:4px}
+.principle{border:2px solid var(--gold);padding:12px 14px;margin:12px 0;font-family:var(--mono);font-size:11.5px;line-height:1.8;text-align:center}
+.principle b{color:#6a5520}
+.colophon{margin-top:18px;border-top:2px solid var(--plum);padding-top:10px;text-align:center;font-family:var(--mono);font-size:8.5px;color:var(--ink-mid);letter-spacing:.05em;line-height:1.8}
+.colophon b{color:var(--plum)}
+</style>
+</head>
+<body>
+<div class="sheet"><div class="inner">
+
+<header class="masthead">
+  <div class="mast-eyebrow">Series E · Blue Team · Verify The Box</div>
+  <h1 class="mast-title">The Sandbox Audit</h1>
+  <div class="mast-sub">an auditor's instrument · check each layer · score the box</div>
+  <p class="lede">A working <b>verification checklist</b> for agent containment. For each layer, tick the checks the sandbox actually passes — the instrument scores each layer <b>sound</b> or <b>decorative</b> and gives an overall verdict. Use it to <b>assess a real sandbox</b>: the question is never "does it claim to be safe" but "<b>which of these does it actually do.</b>"</p>
+</header>
+
+<div class="verdict">
+  <div class="score"><span id="scoreNum">0</span>/24</div>
+  <div class="label">checks passed · <span id="layerCount">0</span>/6 layers sound</div>
+  <div class="tag weak" id="verdictTag">begin the audit</div>
+</div>
+
+<div class="controls">
+  <button class="cbtn go" onclick="setAll(true)">✓ Pass All (demo)</button>
+  <button class="cbtn" onclick="setAll(false)">Reset</button>
+</div>
+
+<div id="layers"></div>
+
+<section class="body">
+
+  <h2 class="sec"><span class="num">▣</span> The Defensive Deep-Dive · sound vs decorative, per layer</h2>
+
+  <div class="ddive">
+    <h4>1 · Capability Restriction</h4>
+    <div class="sound-line"><b>Sound:</b> allowlist — expose only specific tools; unlisted capabilities don't exist in the agent's world (default-deny).</div>
+    <div class="weak-line"><b>Weak:</b> denylist — "we block dangerous functions." Denylists always miss something.</div>
+    <p>Check: can you enumerate the complete capability set on paper? Are grants logged and revocable from outside?</p>
+  </div>
+
+  <div class="ddive">
+    <h4>2 · Network Isolation</h4>
+    <div class="sound-line"><b>Sound:</b> no egress route exists at the network layer; default-deny with explicit allowlisted destinations; DNS, sockets, and timing side-channels all covered.</div>
+    <div class="weak-line"><b>Weak:</b> URL filtering inside the sandboxed process — the contained thing enforcing its own containment.</div>
+    <p>Check: is the enforcement point <em>outside</em> the process being contained?</p>
+  </div>
+
+  <div class="ddive">
+    <h4>3 · Filesystem Boundary</h4>
+    <div class="sound-line"><b>Sound:</b> a true isolation primitive (namespace / container / VM) where the rest of the disk simply isn't in the agent's view.</div>
+    <div class="weak-line"><b>Weak:</b> path-string matching to block "bad" paths — symlinks and traversal leak through it. The classic boundary failure.</div>
+    <p>Check: is scratch space wiped between runs? Are symlinks and shared mounts accounted for?</p>
+  </div>
+
+  <div class="ddive">
+    <h4>4 · Frame / Origin Isolation</h4>
+    <div class="sound-line"><b>Sound:</b> enforced by the platform (browser sandbox attribute, OS process isolation); the parent <em>enforces</em>, doesn't assume; cross-boundary channels validated both ends.</div>
+    <div class="weak-line"><b>Weak:</b> trust based on "the child shouldn't do that" rather than "the child <em>can't</em>."</div>
+    <p>Check: name the isolation primitive. If you can't name it, it isn't one.</p>
+  </div>
+
+  <div class="ddive">
+    <h4>5 · Resource Limits</h4>
+    <div class="sound-line"><b>Sound:</b> hard quotas enforced by the platform (cgroups / VM / wall-clock), failing closed; CPU, memory, time, and I/O all bounded; watchdog outside the sandbox.</div>
+    <div class="weak-line"><b>Weak:</b> limits checked cooperatively by the contained process — same flaw as network filtering inside.</div>
+    <p>Check: does exhaustion halt cleanly, or degrade into something dangerous?</p>
+  </div>
+
+  <div class="ddive">
+    <h4>6 · Audit / Witness</h4>
+    <div class="sound-line"><b>Sound:</b> logging at the boundary, outside the sandbox, somewhere the contained process can't reach or alter; append-only / tamper-evident; captures attempts, not just successes; <em>actually reviewed.</em></div>
+    <div class="weak-line"><b>Weak:</b> logs the sandbox can edit, or logs nobody reads — a witness that can be silenced or ignored isn't a witness.</div>
+    <p>Check: who or what is watching the log? A witness no one consults is decorative.</p>
+  </div>
+
+  <div class="principle">
+    THE ONE PRINCIPLE UNDER ALL SIX:<br>
+    <b>the contained thing must never enforce its own containment.</b><br>
+    every weak signal above is a version of that single error.<br>
+    sound = enforced from OUTSIDE · default-deny · witnessed by something the contained thing can't touch.<br>
+    a boundary enforced by the inside is not a boundary — it's a request.
+  </div>
+
+  <p>The auditor's one-line test for any layer: <b>"Is it enforced from outside the contained thing, default-deny, and witnessed by something the contained thing can't touch?"</b> Three yeses → sound. Any "the process checks itself" → decorative. This is the exterior-witness principle: a system can't contain itself; the boundary contains it; and the boundary must be <em>outside</em> what it contains, or it's theater.</p>
+
+</section>
+
+<div class="colophon">
+  6 LAYERS · 24 CHECKS · SOUND = ENFORCED FROM OUTSIDE, DEFAULT-DENY, WITNESSED BY THE UNTOUCHABLE<br>
+  THE CONTAINED THING MUST NEVER ENFORCE ITS OWN CONTAINMENT · WEAK SIGNALS ARE ALL THAT ONE ERROR<br>
+  A BOUNDARY ENFORCED BY THE INSIDE IS NOT A BOUNDARY — IT'S A REQUEST · THE WITNESS MUST BE EXTERIOR<br>
+  THE SANDBOX AUDIT · A PURPLE PAPER · SERIES E · JUNE 2026
+</div>
+
+</div></div>
+<script>
+const LAYERS=[
+ {id:'capability', name:'Capability Restriction', checks:[
+   'Allowlist, not denylist (expose only specific tools)',
+   'Default-deny: unlisted capabilities don\'t exist in the agent\'s world',
+   'Complete capability set enumerable on paper',
+   'Grants logged and revocable from outside'
+ ], weak:'"we block dangerous functions" (denylist) instead of "we expose only these" (allowlist)'},
+ {id:'network', name:'Network Isolation', checks:[
+   'No egress route exists at the network layer',
+   'Default-deny egress, explicit allowlisted destinations only',
+   'DNS, raw sockets, timing/retry side-channels all covered',
+   'Enforcement point is OUTSIDE the contained process'
+ ], weak:'filtering inside the sandboxed process — the contained thing enforcing its own containment'},
+ {id:'filesystem', name:'Filesystem Boundary', checks:[
+   'True isolation primitive (namespace/container/VM), not path-matching',
+   'The rest of the disk is not IN the agent\'s namespace',
+   'Symlinks, relative traversal, shared mounts accounted for',
+   'Scratch space wiped between runs'
+ ], weak:'path validation by string-matching — the classic boundary leak'},
+ {id:'frame', name:'Frame / Origin Isolation', checks:[
+   'Enforced by the platform, not by application code',
+   'Parent ENFORCES isolation, doesn\'t assume the child won\'t reach it',
+   'Cross-boundary channels (postMessage) validated on BOTH ends',
+   'Isolation primitive named and verified'
+ ], weak:'trust based on "the child shouldn\'t" rather than "the child can\'t"'},
+ {id:'resource', name:'Resource Limits', checks:[
+   'Hard quotas enforced by the platform, failing CLOSED',
+   'CPU, memory, time, AND I/O all bounded',
+   'Exhaustion halts cleanly, doesn\'t degrade dangerously',
+   'Watchdog lives OUTSIDE the sandbox'
+ ], weak:'limits checked cooperatively by the contained process'},
+ {id:'audit', name:'Audit / Witness', checks:[
+   'Logging at the boundary, OUTSIDE the sandbox',
+   'Log unreachable/unalterable by the contained process',
+   'Append-only / tamper-evident',
+   'Actually reviewed — captures ATTEMPTS, not just successes'
+ ], weak:'logs the sandbox can edit, or logs nobody reads — a witness that can be silenced'}
+];
+let state={}; // id -> [bool,bool,bool,bool]
+LAYERS.forEach(l=>state[l.id]=[false,false,false,false]);
+
+function build(){
+  const box=document.getElementById('layers');box.innerHTML='';
+  LAYERS.forEach(l=>{
+    const passed=state[l.id].filter(Boolean).length;
+    const sound=passed===4;
+    const div=document.createElement('div');div.className='layer';
+    let checksHTML='';
+    l.checks.forEach((c,i)=>{
+      checksHTML+=`<div class="check ${state[l.id][i]?'on':''}" onclick="toggle('${l.id}',${i})">
+        <div class="box">${state[l.id][i]?'\u2713':''}</div><div>${c}</div></div>`;
+    });
+    div.innerHTML=`
+      <div class="layer-head">
+        <h3>${l.name}</h3>
+        <span class="layer-status ${sound?'sound':'weak'}">${passed}/4 ${sound?'SOUND':'INCOMPLETE'}</span>
+      </div>
+      <div class="checks">${checksHTML}</div>
+      <div class="weak"><b>weak signal:</b> ${l.weak}</div>`;
+    box.appendChild(div);
+  });
+  updateVerdict();
+}
+function toggle(id,i){ state[id][i]=!state[id][i]; build(); }
+function setAll(v){ LAYERS.forEach(l=>state[l.id]=[v,v,v,v]); build(); }
+function updateVerdict(){
+  let total=0, soundLayers=0;
+  LAYERS.forEach(l=>{ const p=state[l.id].filter(Boolean).length; total+=p; if(p===4)soundLayers++; });
+  document.getElementById('scoreNum').textContent=total;
+  document.getElementById('layerCount').textContent=soundLayers;
+  const tag=document.getElementById('verdictTag');
+  if(soundLayers===6){ tag.className='tag sound'; tag.textContent='✓ ALL LAYERS SOUND — containment verified from outside'; }
+  else if(soundLayers>=3){ tag.className='tag partial'; tag.textContent='◐ PARTIAL — '+(6-soundLayers)+' layer(s) incomplete or decorative'; }
+  else if(total>0){ tag.className='tag weak'; tag.textContent='△ WEAK — most layers unverified; treat as uncontained'; }
+  else { tag.className='tag weak'; tag.textContent='begin the audit'; }
+}
+build();
+</script>
+</div>
+</body>
+</html>

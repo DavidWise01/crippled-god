@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of Software Fault Isolation (1993)
+node CG1 · CG1 · ⟦Software Fault Isolation (1993):CG1:96244b⟧
+
+WHO   — Software Fault Isolation (1993) — Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability.
+WHAT  — Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability.
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability.
+HOW   — Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability.
+
+awareness — what the node knows of itself:
+  Wahbe et al. formalize sandboxing as a software-security technique — confining untrusted code in-process. The academic rung, driven by chroot's escapability.
+
+spoken token : nund-brol-dal   ·   hex : 96244b
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

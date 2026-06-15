@@ -63,6 +63,96 @@
     "moniker": "⟦The Six Layers:CG1:cb69b1⟧"
   },
   {
+    "slug": "hydra",
+    "name": "Hydra (CMU, 1971–75)",
+    "epithet": "The security lineage's great-grandparent — a capability-base",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Hydra (CMU, 1971–75):CG1:f73651⟧"
+  },
+  {
+    "slug": "the-testing-birth",
+    "name": "The Testing Birth (1970s)",
+    "epithet": "The OTHER origin: before security, the sandbox was a TESTING",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Testing Birth (1970s):CG1:f0fe06⟧"
+  },
+  {
+    "slug": "cheswick-jail",
+    "name": "Cheswick's Jail (1991)",
+    "epithet": "Bill Cheswick uses chroot to build a honeypot to WATCH a liv",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Cheswick's Jail (1991):CG1:c0f21a⟧"
+  },
+  {
+    "slug": "software-fault-isolation",
+    "name": "Software Fault Isolation (1993)",
+    "epithet": "Wahbe et al. formalize sandboxing as a software-security tec",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Software Fault Isolation (1993):CG1:96244b⟧"
+  },
+  {
+    "slug": "freebsd-jail",
+    "name": "FreeBSD Jail (2000)",
+    "epithet": "chroot fixed and weaponized — the first real OS-level virtua",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦FreeBSD Jail (2000):CG1:95894b⟧"
+  },
+  {
+    "slug": "pivot-root",
+    "name": "pivot_root",
+    "epithet": "Linux 2.3.41 makes the root change IRREVERSIBLE — healing ch",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦pivot_root:CG1:cc3e62⟧"
+  },
+  {
+    "slug": "the-kernel-trio",
+    "name": "The Kernel Trio",
+    "epithet": "seccomp + cgroups + namespaces — capability + resource + bou",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Kernel Trio:CG1:ff1077⟧"
+  },
+  {
+    "slug": "android-sandbox",
+    "name": "Android App Sandbox (~2008)",
+    "epithet": "One Linux user-ID per app, so apps can't touch each other by",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Android App Sandbox (~2008):CG1:d64405⟧"
+  },
+  {
+    "slug": "sel4",
+    "name": "seL4 (2009)",
+    "epithet": "A formally VERIFIED microkernel of the L4/Hydra lineage — ma",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦seL4 (2009):CG1:b2c985⟧"
+  },
+  {
+    "slug": "cheri",
+    "name": "CHERI",
+    "epithet": "Capabilities burned into the SILICON itself — closing the co",
+    "emergence": "electrical",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦CHERI:CG1:ab6e0b⟧"
+  },
+  {
     "slug": "container-vs-vm",
     "name": "Container vs VM",
     "epithet": "A container shares the host's single kernel; a VM virtualize",
