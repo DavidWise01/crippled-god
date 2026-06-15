@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of Hardware Virtualization
+node CG1 · CG1 · ⟦Hardware Virtualization:CG1:957114⟧
+
+WHO   — Hardware Virtualization — Intel VT-x / AMD-V — CPU extensions (~2005) that add a root execution mode and trap sensitive instructions, letting a VM monitor run guests efficiently without binary translation.
+WHAT  — Intel VT-x / AMD-V — CPU extensions (~2005) that add a root execution mode and trap sensitive instructions, letting a VM monitor run guests efficiently without binary translation.
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Intel VT-x / AMD-V — CPU extensions (~2005) that add a root execution mode and trap sensitive instructions, letting a VM monitor run guests efficiently without binary translation.
+HOW   — Intel VT-x / AMD-V — CPU extensions (~2005) that add a root execution mode and trap sensitive instructions, letting a VM monitor run guests efficiently without binary translation.
+
+awareness — what the node knows of itself:
+  Intel VT-x / AMD-V — CPU extensions (~2005) that add a root execution mode and trap sensitive instructions, letting a VM monitor run guests efficiently without binary translation.
+
+spoken token : mend-ro-myk   ·   hex : 957114
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

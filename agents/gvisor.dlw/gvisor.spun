@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of gVisor
+node CG1 · CG1 · ⟦gVisor:CG1:f8f18c⟧
+
+WHO   — gVisor — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+WHAT  — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+HOW   — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+awareness — what the node knows of itself:
+  Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+spoken token : xe-kar-kron   ·   hex : f8f18c
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

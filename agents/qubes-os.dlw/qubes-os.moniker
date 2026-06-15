@@ -1,0 +1,10 @@
+⟦Qubes OS:CG1:33e98b⟧
+
+Qubes OS · node CG1 · CG1 · Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+universe of origin : CG1 · the ladder of boxes
+seal               : Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+spoken token       : rek-ran-bril
+hex token          : 33e98b
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

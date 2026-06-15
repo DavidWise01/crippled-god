@@ -1,0 +1,10 @@
+⟦Container vs VM:CG1:aef320⟧
+
+Container vs VM · node CG1 · CG1 · A container shares the host's single kernel; a VM virtualizes a whole machine. The VM boundary is thicker — to reach the host you must also defeat the hypervisor. (NIST SP 800-190)
+
+universe of origin : CG1 · the ladder of boxes
+seal               : A container shares the host's single kernel; a VM virtualizes a whole machine. The VM boundary is thicker — to reach the host you must also defeat the hypervisor. (NIST SP 800-190)
+spoken token       : phorn-nyx-stym
+hex token          : aef320
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

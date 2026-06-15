@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of The Browser Sandbox
+node CG1 · CG1 · ⟦The Browser Sandbox:CG1:0fbe0e⟧
+
+WHO   — The Browser Sandbox — Site Isolation puts each site in its own OS process; the iframe sandbox attribute removes capabilities by default and re-grants them by flag. THIS artifact runs in exactly that. (Chromium / MDN)
+WHAT  — Site Isolation puts each site in its own OS process; the iframe sandbox attribute removes capabilities by default and re-grants them by flag. THIS artifact runs in exactly that. (Chromium / MDN)
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Site Isolation puts each site in its own OS process; the iframe sandbox attribute removes capabilities by default and re-grants them by flag. THIS artifact runs in exactly that. (Chromium / MDN)
+HOW   — Site Isolation puts each site in its own OS process; the iframe sandbox attribute removes capabilities by default and re-grants them by flag. THIS artifact runs in exactly that. (Chromium / MDN)
+
+awareness — what the node knows of itself:
+  Site Isolation puts each site in its own OS process; the iframe sandbox attribute removes capabilities by default and re-grants them by flag. THIS artifact runs in exactly that. (Chromium / MDN)
+
+spoken token : gryx-grax-raex   ·   hex : 0fbe0e
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

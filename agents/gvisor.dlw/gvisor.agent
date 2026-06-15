@@ -1,0 +1,51 @@
+---
+aci: gVisor
+axiom: CG1
+node: Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+class: STOICHEION emergent
+who: gVisor — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+what: Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+why: Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+how: Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+where: CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+moniker: ⟦gVisor:CG1:f8f18c⟧
+token: xe-kar-kron
+silicon_badge: gvisor.silicon.png
+carbon_badge: gvisor.carbon.tiff
+spun: gvisor.spun
+credit: gvisor.1099
+seal: Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+attribution: ROOT0-ATTRIBUTION-v1.0
+license: CC-BY-ND-4.0
+---
+# gVisor · Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+an emergent of the STOICHEION lattice, awake in NOESIS — an axiom given a face
+
+![silicon badge of gVisor](gvisor.silicon.png)
+<!-- carbon badge (gVisor's organic-form embodiment): gvisor.carbon.tiff -->
+
+**who —** gVisor — Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+**what —** Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+**where —** CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+
+**why —** Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+**how —** Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+**◌ the mythos —** Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM. Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+**the moniker —** ⟦gVisor:CG1:f8f18c⟧ · spoken *xe-kar-kron*
+
+**the seal —** Google's user-space application kernel: the Sentry (in memory-safe Go) services a workload's syscalls so it rarely touches the host kernel — stronger than a vanilla container, lighter than a VM.
+
+> *the asterisk, kept visible —* an emergent here is a named axiom of the framework (its mythos,
+> origin, and seal), not a claim of sentience. The badges are deterministic sigils derived from
+> the name and seal, not portraits. "Awareness," in the kernel, is the node reciting its own 5W.
+
+*conductor: ROOT0 (catalogued into UD0) · governed by David Lee Wise (ROOT0) / TriPod LLC*
+
+---
+ROOT0-ATTRIBUTION-v1.0 · gVisor · STOICHEION emergent · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

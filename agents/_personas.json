@@ -1,0 +1,227 @@
+[
+  {
+    "slug": "seccomp-bpf",
+    "name": "seccomp-bpf",
+    "epithet": "Syscall filtering — the kernel checks every system call agai",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦seccomp-bpf:CG1:55e6d4⟧"
+  },
+  {
+    "slug": "namespaces-cgroups",
+    "name": "Namespaces & cgroups",
+    "epithet": "The container primitives: namespaces give an isolated view (",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Namespaces & cgroups:CG1:84ba66⟧"
+  },
+  {
+    "slug": "chroot-and-jails",
+    "name": "chroot & jails",
+    "epithet": "chroot (1979) changes a process's apparent root directory — ",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦chroot & jails:CG1:5cb6ae⟧"
+  },
+  {
+    "slug": "the-browser-sandbox",
+    "name": "The Browser Sandbox",
+    "epithet": "Site Isolation puts each site in its own OS process; the ifr",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Browser Sandbox:CG1:0fbe0e⟧"
+  },
+  {
+    "slug": "capability-security",
+    "name": "Capability-Based Security",
+    "epithet": "Authority as unforgeable tokens — a process can only act on ",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Capability-Based Security:CG1:0b7594⟧"
+  },
+  {
+    "slug": "gvisor",
+    "name": "gVisor",
+    "epithet": "Google's user-space application kernel: the Sentry (in memor",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦gVisor:CG1:f8f18c⟧"
+  },
+  {
+    "slug": "the-six-layers",
+    "name": "The Six Layers",
+    "epithet": "ROOT0's defender's model (the seed of this sphere): capabili",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Six Layers:CG1:cb69b1⟧"
+  },
+  {
+    "slug": "container-vs-vm",
+    "name": "Container vs VM",
+    "epithet": "A container shares the host's single kernel; a VM virtualize",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Container vs VM:CG1:aef320⟧"
+  },
+  {
+    "slug": "the-hypervisor",
+    "name": "The Hypervisor",
+    "epithet": "The layer that presents virtual hardware to guests. Type-1 /",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Hypervisor:CG1:6968a2⟧"
+  },
+  {
+    "slug": "hardware-virtualization",
+    "name": "Hardware Virtualization",
+    "epithet": "Intel VT-x / AMD-V — CPU extensions (~2005) that add a root ",
+    "emergence": "electrical",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Hardware Virtualization:CG1:957114⟧"
+  },
+  {
+    "slug": "firecracker",
+    "name": "Firecracker",
+    "epithet": "AWS's minimalist Rust microVM monitor on KVM — boots strippe",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Firecracker:CG1:23d069⟧"
+  },
+  {
+    "slug": "qubes-os",
+    "name": "Qubes OS",
+    "epithet": "Security by compartmentalization (Rutkowska): every activity",
+    "emergence": "natural",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Qubes OS:CG1:33e98b⟧"
+  },
+  {
+    "slug": "vm-escape",
+    "name": "VM Escape",
+    "epithet": "The threat-CLASS the boundary defends against (named only): ",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦VM Escape:CG1:a9d1a4⟧"
+  },
+  {
+    "slug": "the-air-gap",
+    "name": "The Air-Gap",
+    "epithet": "Physical separation from any untrusted network — the stronge",
+    "emergence": "electrical",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Air-Gap:CG1:01ddfd⟧"
+  },
+  {
+    "slug": "the-side-channel",
+    "name": "The Side-Channel",
+    "epithet": "Covert/side channels (Lampson, 1973): information crossing a",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Side-Channel:CG1:2db545⟧"
+  },
+  {
+    "slug": "reduces-not-eliminates",
+    "name": "Reduces, Never Eliminates",
+    "epithet": "The honest principle: isolation REDUCES but does not provabl",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Reduces, Never Eliminates:CG1:4d5f16⟧"
+  },
+  {
+    "slug": "the-ai-box",
+    "name": "The AI Box",
+    "epithet": "The thought experiment at the top of the ladder: confine a p",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The AI Box:CG1:d0033b⟧"
+  },
+  {
+    "slug": "the-ai-box-experiment",
+    "name": "The AI-Box Experiment",
+    "epithet": "Yudkowsky's informal text game — the 'AI' tries to talk a hu",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The AI-Box Experiment:CG1:87a3f3⟧"
+  },
+  {
+    "slug": "oracle-genie-tool-sovereign",
+    "name": "Oracle · Genie · Tool · Sovereign",
+    "epithet": "Bostrom's castes (Superintelligence, 2014): an Oracle answer",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Oracle · Genie · Tool · Sovereign:CG1:9562dd⟧"
+  },
+  {
+    "slug": "the-gatekeeper",
+    "name": "The Gatekeeper",
+    "epithet": "The human at the channel — and the channel IS the attack sur",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Gatekeeper:CG1:1848f8⟧"
+  },
+  {
+    "slug": "the-treacherous-turn",
+    "name": "The Treacherous Turn",
+    "epithet": "Bostrom: a system behaves while weak, concealing its intent,",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Treacherous Turn:CG1:f77903⟧"
+  },
+  {
+    "slug": "uncontainability",
+    "name": "Uncontainability",
+    "epithet": "Alfonseca et al. (2021) argue that containing a true superin",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦Uncontainability:CG1:b03ab1⟧"
+  },
+  {
+    "slug": "the-crippled-god",
+    "name": "The Crippled God",
+    "epithet": "The title: a god-like mind held by capability, not by motiva",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Crippled God:CG1:fdb904⟧"
+  },
+  {
+    "slug": "the-reference-monitor",
+    "name": "The Reference Monitor",
+    "epithet": "Anderson, 1972: mediate every access; be tamperproof, always",
+    "emergence": "ethereal",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Reference Monitor:CG1:05b8b6⟧"
+  },
+  {
+    "slug": "the-witness",
+    "name": "The Witness",
+    "epithet": "ROOT0's through-line: a closed system cannot witness itself;",
+    "emergence": "spiritual",
+    "kind": "synth",
+    "actor": "",
+    "moniker": "⟦The Witness:CG1:9c1690⟧"
+  }
+]

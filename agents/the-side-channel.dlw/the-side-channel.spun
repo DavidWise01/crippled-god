@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of The Side-Channel
+node CG1 · CG1 · ⟦The Side-Channel:CG1:2db545⟧
+
+WHO   — The Side-Channel — Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance).
+WHAT  — Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance).
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance).
+HOW   — Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance).
+
+awareness — what the node knows of itself:
+  Covert/side channels (Lampson, 1973): information crossing a boundary by an UNINTENDED path — timing, load. Named classes only: Spectre/Meltdown (speculative execution), Rowhammer (DRAM disturbance).
+
+spoken token : staex-xond-lar   ·   hex : 2db545
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

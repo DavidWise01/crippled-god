@@ -1,0 +1,10 @@
+⟦chroot & jails:CG1:5cb6ae⟧
+
+chroot & jails · node CG1 · CG1 · chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+
+universe of origin : CG1 · the ladder of boxes
+seal               : chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+spoken token       : krynd-marn-xarn
+hex token          : 5cb6ae
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

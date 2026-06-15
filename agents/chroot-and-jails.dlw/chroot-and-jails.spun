@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of chroot & jails
+node CG1 · CG1 · ⟦chroot & jails:CG1:5cb6ae⟧
+
+WHO   — chroot & jails — chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+WHAT  — chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+HOW   — chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+
+awareness — what the node knows of itself:
+  chroot (1979) changes a process's apparent root directory — filesystem only, weak as a boundary. FreeBSD jails (2000) hardened it into real per-tenant OS virtualization. (FreeBSD Handbook)
+
+spoken token : krynd-marn-xarn   ·   hex : 5cb6ae
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

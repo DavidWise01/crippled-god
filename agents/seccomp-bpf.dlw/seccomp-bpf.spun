@@ -1,0 +1,14 @@
+⦿ .spun — the five-fold spin of seccomp-bpf
+node CG1 · CG1 · ⟦seccomp-bpf:CG1:55e6d4⟧
+
+WHO   — seccomp-bpf — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+WHAT  — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+WHERE — CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+WHY   — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+HOW   — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+awareness — what the node knows of itself:
+  Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+spoken token : myx-min-sym   ·   hex : 55e6d4
+ROOT0-ATTRIBUTION-v1.0 · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

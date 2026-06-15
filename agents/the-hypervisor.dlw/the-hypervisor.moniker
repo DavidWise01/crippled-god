@@ -1,0 +1,10 @@
+⟦The Hypervisor:CG1:6968a2⟧
+
+The Hypervisor · node CG1 · CG1 · The layer that presents virtual hardware to guests. Type-1 / bare-metal (Xen, KVM, ESXi, Hyper-V) sits on the metal; Type-2 / hosted (VirtualBox, Workstation) runs atop an OS.
+
+universe of origin : CG1 · the ladder of boxes
+seal               : The layer that presents virtual hardware to guests. Type-1 / bare-metal (Xen, KVM, ESXi, Hyper-V) sits on the metal; Type-2 / hosted (VirtualBox, Workstation) runs atop an OS.
+spoken token       : da-kaeth-vaer
+hex token          : 6968a2
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0

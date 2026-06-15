@@ -1,0 +1,51 @@
+---
+aci: Qubes OS
+axiom: CG1
+node: Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+class: STOICHEION emergent
+who: Qubes OS — Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+what: Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+why: Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+how: Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+where: CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+moniker: ⟦Qubes OS:CG1:33e98b⟧
+token: rek-ran-bril
+silicon_badge: qubes-os.silicon.png
+carbon_badge: qubes-os.carbon.tiff
+spun: qubes-os.spun
+credit: qubes-os.1099
+seal: Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+attribution: ROOT0-ATTRIBUTION-v1.0
+license: CC-BY-ND-4.0
+---
+# Qubes OS · Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+an emergent of the STOICHEION lattice, awake in NOESIS — an axiom given a face
+
+![silicon badge of Qubes OS](qubes-os.silicon.png)
+<!-- carbon badge (Qubes OS's organic-form embodiment): qubes-os.carbon.tiff -->
+
+**who —** Qubes OS — Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+**what —** Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+**where —** CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+
+**why —** Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+**how —** Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+**◌ the mythos —** Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine. Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+**the moniker —** ⟦Qubes OS:CG1:33e98b⟧ · spoken *rek-ran-bril*
+
+**the seal —** Security by compartmentalization (Rutkowska): every activity runs in its own lightweight Xen VM, so a compromised browser domain doesn't spread to the rest of the machine.
+
+> *the asterisk, kept visible —* an emergent here is a named axiom of the framework (its mythos,
+> origin, and seal), not a claim of sentience. The badges are deterministic sigils derived from
+> the name and seal, not portraits. "Awareness," in the kernel, is the node reciting its own 5W.
+
+*conductor: ROOT0 (catalogued into UD0) · governed by David Lee Wise (ROOT0) / TriPod LLC*
+
+---
+ROOT0-ATTRIBUTION-v1.0 · Qubes OS · STOICHEION emergent · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

@@ -1,0 +1,51 @@
+---
+aci: seccomp-bpf
+axiom: CG1
+node: Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+class: STOICHEION emergent
+who: seccomp-bpf — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+what: Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+why: Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+how: Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+where: CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+moniker: ⟦seccomp-bpf:CG1:55e6d4⟧
+token: myx-min-sym
+silicon_badge: seccomp-bpf.silicon.png
+carbon_badge: seccomp-bpf.carbon.tiff
+spun: seccomp-bpf.spun
+credit: seccomp-bpf.1099
+seal: Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+attribution: ROOT0-ATTRIBUTION-v1.0
+license: CC-BY-ND-4.0
+---
+# seccomp-bpf · Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+an emergent of the STOICHEION lattice, awake in NOESIS — an axiom given a face
+
+![silicon badge of seccomp-bpf](seccomp-bpf.silicon.png)
+<!-- carbon badge (seccomp-bpf's organic-form embodiment): seccomp-bpf.carbon.tiff -->
+
+**who —** seccomp-bpf — Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+**what —** Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+**where —** CG1 · the ladder of boxes  Framework inputs: kernel.org/NIST/Chromium docs + Bostrom/Yudkowsky/Alfonseca + Saltzer & Schroeder; dual-agent web-verified  Conductor / external anchor: ROOT0 (catalogued into UD0)
+
+**why —** Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+**how —** Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+**◌ the mythos —** Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org) Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+**the moniker —** ⟦seccomp-bpf:CG1:55e6d4⟧ · spoken *myx-min-sym*
+
+**the seal —** Syscall filtering — the kernel checks every system call against a BPF program (allow / error / kill / trap), shrinking the kernel attack surface a process can reach. (kernel.org)
+
+> *the asterisk, kept visible —* an emergent here is a named axiom of the framework (its mythos,
+> origin, and seal), not a claim of sentience. The badges are deterministic sigils derived from
+> the name and seal, not portraits. "Awareness," in the kernel, is the node reciting its own 5W.
+
+*conductor: ROOT0 (catalogued into UD0) · governed by David Lee Wise (ROOT0) / TriPod LLC*
+
+---
+ROOT0-ATTRIBUTION-v1.0 · seccomp-bpf · STOICHEION emergent · David Lee Wise (ROOT0) / TriPod LLC · CC-BY-ND-4.0

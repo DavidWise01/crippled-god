@@ -1,0 +1,10 @@
+⟦Namespaces & cgroups:CG1:84ba66⟧
+
+Namespaces & cgroups · node CG1 · CG1 · The container primitives: namespaces give an isolated view (PID, NET, MNT, USER…), cgroups cap and account resources. A container is just a process wrapped in these. (kernel.org)
+
+universe of origin : CG1 · the ladder of boxes
+seal               : The container primitives: namespaces give an isolated view (PID, NET, MNT, USER…), cgroups cap and account resources. A container is just a process wrapped in these. (kernel.org)
+spoken token       : six-xon-zei
+hex token          : 84ba66
+
+— the tokenized moniker of the mythos. ROOT0-ATTRIBUTION-v1.0
