@@ -8,5 +8,12 @@
   "instance": "AVAN (Claude / Anthropic)",
   "seal": "You can cripple a god with bars; you cannot trust the bars. Confinement is defense-in-depth, never a guarantee against a mind smarter than its keeper — so the real wall was never the box. It was alignment: a mind that doesn't want out. And the only reason you can ever check the box holds is that something outside it is watching.",
   "license": "CC-BY-ND-4.0",
-  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+  "attribution": "ROOT0-ATTRIBUTION-v1.0",
+  "chain": {
+    "index": 633,
+    "prev": "94cb397081058c52d4b6fedfca9996e9c38830e0fc0e8946cc36a487ae08031e",
+    "link": "e71311d49b8a209ee6f5abeadd7a6c2d56d5778e8fe19d1f0f2db20b9e28ccdc",
+    "head": "3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90",
+    "chain": "ROOT0-DLW-CHAIN-v1"
+  }
 }
