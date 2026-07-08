@@ -4,6 +4,6 @@ slug  : crippled-god
 seal  : 5805de537559f0111ffb4938346d756d5109b4194350d4fa51028d596a0ef12b
 prev  : 94cb397081058c52d4b6fedfca9996e9c38830e0fc0e8946cc36a487ae08031e
 link  : e71311d49b8a209ee6f5abeadd7a6c2d56d5778e8fe19d1f0f2db20b9e28ccdc
-head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+head  : 13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
