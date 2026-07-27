@@ -2,8 +2,8 @@ ROOT0-DLW-CHAIN-v1
 index : 633
 slug  : crippled-god
 seal  : 5805de537559f0111ffb4938346d756d5109b4194350d4fa51028d596a0ef12b
-prev  : 94cb397081058c52d4b6fedfca9996e9c38830e0fc0e8946cc36a487ae08031e
-link  : e71311d49b8a209ee6f5abeadd7a6c2d56d5778e8fe19d1f0f2db20b9e28ccdc
-head  : 13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2
+prev  : f4decbd891f8928347bb6906408d7b0ce6a7d459581511024555047a84bddc50
+link  : 44d3d890db5d1c6d67ad07af0ac02f0f3e82f9ea9542d1204fb2975b1acae4b9
+head  : c4d41afeaef76470528856d54d86cf480a0e1c2fc8ebc60fbb9eb8e442585f2b
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
